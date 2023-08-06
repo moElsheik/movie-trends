@@ -9,7 +9,7 @@ export default function Login({saveUserDataToken}) {
 
   const [user, setUser] = useState({})
   const [apimessage, setApimessage] = useState(null)
-  const [spin, setSpin] = useState(false)
+  const [ setSpin] = useState(false)
   const [joiEror, setJoiEror] = useState(null)
 
   
@@ -85,6 +85,8 @@ export default function Login({saveUserDataToken}) {
  
   <form className='w-75 m-auto' onSubmit={submitForm} >
   {apimessage?  <p class="text-danger ">{apimessage.message}</p>: "" }
+  { joiEror!=null? joiEror.map((err) =><p className="text-danger ">{err.message}</p>):""    }
+
 
   
   

@@ -1,13 +1,13 @@
 import axios from 'axios'
 import Joi from 'joi'
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Regester() {
 
 const [user, setUser] = useState({})
 const [apimessage, setApimessage] = useState(null)
-const [spin, setSpin] = useState(false)
+const [ setSpin] = useState(false)
 const [joiEror, setJoiEror] = useState(null)
 
 let navigate = useNavigate()

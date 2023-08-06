@@ -1,6 +1,6 @@
 
 import './App.css';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Home from './home/Home';
 import Regester from './regester/Regester';
@@ -40,7 +40,7 @@ function App() {
   }
 
 
-  let routers= createBrowserRouter([
+  let routers= createHashRouter([
     {path:'/', element:<Layout  userDecodedData={userDecodedData}  logOut={logOut}/>, children:[
       {index:true ,element:<Home/>},
       {path:'regester' ,element:<Regester/>},

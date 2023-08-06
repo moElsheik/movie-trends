@@ -18,15 +18,14 @@ export default function MediaContextProvider(props) {
 
   }
 
-
   function setData(){
     getTrendings("movie",setMovieList)
     getTrendings("tv",setTvList)
    getTrendings("person",setpeopleList)
   }
+  
   useEffect(() => {
     setData()
-    console.log(peopleList);
    
   }, [])
   

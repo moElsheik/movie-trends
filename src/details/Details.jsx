@@ -23,11 +23,8 @@ export default function Details() {
 
     useEffect(() => {
         getdetails(media,id)
-        
-       
 
-        
-    }, [])
+    }, [media,id])
 
     
     
