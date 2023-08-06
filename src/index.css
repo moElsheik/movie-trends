@@ -1,13 +1,99 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+background-color: rgb(48, 48, 48);
+color: white;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.button{
+
+  background-color:#1d404e  ;
+  border-radius: 10px;
+border:2px solid black ;
+transition: all .3s;
+box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.274);
+padding: 5px 15px;
+}
+.button:hover{
+  background-color:#292b46 ;
+  transform: translateY(-1PX);
+}
+
+
+.image-card{
+  width: 100%;
+  aspect-ratio: 2/3 ;
+  position: relative;
+}
+
+.card-img-top{
+  position: relative;
+  top: 0;
+  height: 100%;
+
+}
+
+.card-body{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4{
+ position: relative;
+ letter-spacing: 4px;
+}
+h4::after{
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border-top: 4px solid white; 
+  border-bottom:2px solid white  ;
+} 
+
+
+
+img{
+  transition: all .5s;
+}
+
+.card:hover img{
+  transform: scale(1.1);
+}
+
+
+.imageDetails{
+
+  position: relative;
+  overflow: hidden;
+  
+
+
+}
+
+.imageCaption{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 128, 0, 0.473);
+  transition: all .5s;
+}
+
+.imageDetails:hover .imageCaption{
+top: 0;
+}
+
+
+a{
+  text-decoration: none;
 }
