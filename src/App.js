@@ -1,6 +1,6 @@
 
 import './App.css';
-import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Home from './home/Home';
 import Regester from './regester/Regester';
